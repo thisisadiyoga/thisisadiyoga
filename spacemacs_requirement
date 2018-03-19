@@ -1,0 +1,10 @@
+spacemacs requirements
+  emacs
+  ocp-indent
+  > "sudo apt-get install emacs ocp-indent"
+  merlin
+  > "opam install merlin"
+  Source Code Pro (google this)
+
+spacemacs add-ons
+  swoop (helm-swoop)

@@ -1,0 +1,30 @@
+opam dependencies:
+  ocamlgraph 1.8.5 [do "opam pin add ocamlgraph 1.8.5"]
+  cppo
+  batteries
+  camlp4
+  extlib
+"opam install ocamlgraph cppo batteries camlp4 extlib"
+
+use ocaml compiler version 4.02.1
+  "opam switch 4.02.1"
+  "eval 'opam config env'"
+
+###########################################################
+
+re-make XML
+  "cd xml"
+  "make clean"
+  "make all"
+
+###########################################################
+
+re-make omega_modified
+  "cd omega_modified"
+  "make all"
+  copy "petit" and "oc" to "sleekex" directory
+
+###########################################################
+
+hip/sleek requirement
+  z3 : "sudo apt-get install z3"
